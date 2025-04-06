@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆荚2025荷兰艺术夏令营 - 行程与定价</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            max-width: 900px; /* Limiting width for better readability on wide screens */
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50; /* A slightly softer black */
+            border-bottom: 1px solid #ecf0f1; /* Light line under headings */
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #3498db; /* Thicker blue line for main title */
+            margin-bottom: 30px;
+        }
+        h3 {
+            margin-top: 40px;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #bdc3c7; /* Slightly darker separator */
+            margin: 40px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #dfe6e9; /* Lighter borders */
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top; /* Align content to top */
+        }
+        th {
+            background-color: #ecf0f1; /* Light grey header */
+            font-weight: bold;
+            color: #34495e;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #fdfdfd; /* Very light alternate row color */
+        }
+        tbody tr:hover {
+            background-color: #f1f5f8; /* Hover effect */
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: square; /* Simple list style */
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        blockquote {
+            background-color: #f8f9fa;
+            border-left: 5px solid #3498db; /* Blue left border */
+            margin: 20px 0;
+            padding: 15px 20px;
+            color: #555;
+            font-style: italic;
+        }
+        strong {
+            color: #2980b9; /* Highlight strong text */
+        }
+        /* Specific alignment for currency columns */
+        td:nth-child(2) { /* Assuming second column often contains currency */
+             text-align: right;
+        }
+        table tr td:last-child { /* Align last column left */
+             text-align: left;
+        }
+        /* Ensure table headers are aligned left unless specific need */
+         th {
+            text-align: left;
+         }
+
+        /* --- Calendar Styles Start --- */
+        .calendar-container {
+            margin-top: 25px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f9fa; /* Light background for the calendar container */
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        .calendar-container h4 {
+            margin-top: 0; /* Remove extra top margin for heading inside container */
+            text-align: center;
+            border-bottom: none; /* Remove default border for heading inside */
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        .calendar-widget {
+            width: 100%;
+            border-collapse: collapse; /* Use collapse for cleaner look */
+            table-layout: fixed; /* Ensure columns have equal width */
+            box-shadow: none; /* Remove default table shadow if applied */
+            margin: 0; /* Remove default table margins */
+        }
+        .calendar-widget th {
+            text-align: center;
+            padding: 10px 5px;
+            background-color: #eaf4fc; /* Lighter blue for header */
+            font-weight: normal; /* Make weekday headers less bold */
+            color: #2980b9;
+            border: 1px solid #dceaf7;
+        }
+        .calendar-widget td {
+            text-align: center;
+            padding: 10px 5px; /* Adjusted padding */
+            border: 1px solid #e9ecef;
+            height: 55px; /* Adjusted height */
+            vertical-align: top; /* Align date to top */
+            position: relative; /* For positioning labels */
+            font-size: 0.9em; /* Slightly smaller date font */
+        }
+        .calendar-widget td.other-month {
+            color: #aaa; /* Grey color for dates from other months */
+            background-color: #f8f8f8; /* Slightly different background */
+        }
+        .calendar-widget td.camp-date {
+            background-color: #d1eaff; /* Light blue background for camp dates */
+            font-weight: bold;
+            color: #1c6ca7;
+        }
+         /* Ensure other-month style overrides camp-date if needed (though not applicable here) */
+        .calendar-widget td.other-month.camp-date {
+             background-color: #f8f8f8; /* Keep other month style dominant */
+             font-weight: normal;
+             color: #aaa;
+         }
+        .calendar-widget td.start-date {
+             /* Optional: Add specific style for start date */
+             /* border-left: 3px solid #2980b9; */
+        }
+        .calendar-widget td.end-date {
+             /* Optional: Add specific style for end date */
+             /* border-right: 3px solid #2980b9; */
+        }
+        .calendar-widget td .day-label {
+            display: block;
+            font-size: 0.7em;
+            margin-top: 2px;
+            color: #e74c3c; /* Red color for labels */
+            font-weight: bold;
+            line-height: 1.1;
+            position: absolute; /* Position label within cell */
+            bottom: 4px; /* Position at bottom */
+            left: 0;
+            right: 0; /* Center the label text */
+            text-align: center;
+        }
+         /* Remove hover effect for calendar cells if desired */
+        .calendar-widget tbody tr:hover {
+            background-color: inherit; /* Override default table row hover */
+        }
+         .calendar-widget tbody tr td:hover {
+             background-color: #f1f5f8; /* Apply hover only to individual cells */
+         }
+        .calendar-widget td.other-month:hover {
+            background-color: #efefef; /* Different hover for other month */
+        }
+         .calendar-widget td.camp-date:hover {
+             background-color: #b8daff; /* Darker hover for camp dates */
+         }
+        /* --- Calendar Styles End --- */
+
+    </style>
+</head>
+<body>
+
+    <h1>行程 + 定价</h1>
+
+    <section id="itinerary">
+        <h3>最佳日期：</h3>
+        <p><strong>8月5日周二抵达 - 8月16日周六返程（12-13天）</strong></p>
+
+        <div class="calendar-container">
+            <h4>行程日期概览：2025年8月</h4>
+            <table class="calendar-widget">
+                <thead>
+                    <tr>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th>六</th>
+                        <th>日</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="other-month">28</td>
+                        <td class="other-month">29</td>
+                        <td class="other-month">30</td>
+                        <td class="other-month">31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="camp-date start-date">5<span class="day-label">抵达</span></td>
+                        <td class="camp-date">6</td>
+                        <td class="camp-date">7</td>
+                        <td class="camp-date">8</td>
+                        <td class="camp-date">9</td>
+                        <td class="camp-date">10</td>
+                    </tr>
+                    <tr>
+                        <td class="camp-date">11</td>
+                        <td class="camp-date">12</td>
+                        <td class="camp-date">13</td>
+                        <td class="camp-date">14</td>
+                        <td class="camp-date">15</td>
+                        <td class="camp-date end-date">16<span class="day-label">返程</span></td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                         <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                     <tr>
+                         <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                     <tr>
+                         <td class="other-month">1</td>
+                        <td class="other-month">2</td>
+                        <td class="other-month">3</td>
+                        <td class="other-month">4</td>
+                        <td class="other-month">5</td>
+                        <td class="other-month">6</td>
+                        <td class="other-month">7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>基于如下考量：</h4>
+        <ul>
+            <li>博物馆开放时间（避开周一关闭）</li>
+            <li>交通时间平滑（避开周末高峰）</li>
+            <li>时差适应节奏（初到日应尽量适量带入）</li>
+        </ul>
+
+        <h4>具体行程：</h4>
+        <p><strong>2025年8月5日（周二） - 8月16日（周六）</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>地点</th>
+                    <th>主要活动</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8.5 (周二)</td>
+                    <td>北京 → 阿姆斯特丹</td>
+                    <td>报到、入住、适应时差</td>
+                </tr>
+                <tr>
+                    <td>8.6-8.8</td>
+                    <td>阿姆斯特丹</td>
+                    <td>动物园、博物馆群、科学馆、公园写生</td>
+                </tr>
+                <tr>
+                    <td>8.9-8.11</td>
+                    <td>森林营地</td>
+                    <td>自然探索、攀岩、划船、绩火创作</td>
+                </tr>
+                <tr>
+                    <td>8.12</td>
+                    <td>烏特勒支 + 海牙</td>
+                    <td>艺术迷宫、运河散步、入住</td>
+                </tr>
+                <tr>
+                    <td>8.13</td>
+                    <td>海牙 → 巴黎</td>
+                    <td>王家美术馆，通勤火车转地铁（*原文“灯通火车转地”推测为此意*）</td>
+                </tr>
+                <tr>
+                    <td>8.14-15</td>
+                    <td>巴黎</td>
+                    <td>卢浮宫（*原文“卢济宫”*）、奥赛、科学城、塞纳河写生</td>
+                </tr>
+                <tr>
+                    <td>8.16 (周六)</td>
+                    <td>巴黎 → 北京</td>
+                    <td>整理返程</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="pricing">
+        <h1>费用与定价</h1>
+
+        <h3>💰 执行成本结构（按每位学生）</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>项目</th>
+                    <th>金额（人民币）</th>
+                    <th>说明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>行动成本</td>
+                    <td>¥26,000</td>
+                    <td>含住宿、交通、门票、餐饮、材料等基础费用</td>
+                </tr>
+                <tr>
+                    <td>国际机票</td>
+                    <td>¥10,000</td>
+                    <td>学生机票费用（不含教师）</td>
+                </tr>
+                <tr>
+                    <td>签证+保险+材料</td>
+                    <td>¥4,000</td>
+                    <td>含签证办理、欧洲保险、绘画材料等</td>
+                </tr>
+                <tr>
+                    <td><strong>小计</strong></td>
+                    <td><strong>¥40,000</strong></td>
+                    <td><strong>为项目基本执行成本</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="border-style: dashed; background: none; border-top: 1px dashed #bdc3c7; margin: 20px 0;">
+
+        <h3>劳务成本（另计）</h3>
+        <p>领队教师劳务费：每位学生按 2.5 课时 × 200 元 × 12 天 = <strong>¥6,000</strong> 每学生计费</p>
+        <p>随行教师劳务费用：固定计费或按课时计费</p>
+        <p>教师劳务由机构统一核算与结算，<strong>不计入行动预算，但需在定价中覆盖</strong></p>
+
+        <hr style="border-style: dashed; background: none; border-top: 1px dashed #bdc3c7; margin: 20px 0;">
+
+        <h3>定价建议（学生）</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>模型</th>
+                    <th>内容</th>
+                    <th>建议定价</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>成本价</strong></td>
+                    <td>仅覆盖项目执行成本</td>
+                    <td>¥40,000</td>
+                </tr>
+                <tr>
+                    <td><strong>基础定价</strong></td>
+                    <td>含项目成本 + 教师劳务</td>
+                    <td>¥50,000</td>
+                </tr>
+                <tr>
+                    <td><strong>机构定价</strong></td>
+                    <td>含运营利润空间（25–50%）</td>
+                    <td><strong>¥60,000 – ¥70,000</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        <blockquote>
+            <p>建议对外统一公布定价为 ¥6–7 万之间，既覆盖所有人力与运营投入，又留有项目利润空间。</p>
+        </blockquote>
+
+        <h3>👨‍👩‍👧 家长随行方案定价（自愿参与）</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>方案</th>
+                    <th>内容</th>
+                    <th>建议定价（人民币）</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>A方案</strong></td>
+                    <td>全程随团参与，含交通+住宿+门票</td>
+                    <td>¥45,000 / 位成人</td>
+                </tr>
+                <tr>
+                    <td><strong>B方案</strong></td>
+                    <td>仅覆盖机票+签证+部分住宿</td>
+                    <td>¥36,000 / 位成人</td>
+                </tr>
+            </tbody>
+        </table>
+        <blockquote>
+            <p><em>说明：家长方案仅涵盖实际执行成本与管理协调，不包含教学服务。</em></p>
+        </blockquote>
+
+        <h3>📌 执行机制说明</h3>
+        <ul>
+            <li><strong>定金机制</strong>：为确保行程顺利预定，建议每位家庭在报名时支付<strong>40%定金</strong>，用于酒店、交通与材料锁定。</li>
+            <li><strong>教师劳务费</strong>：项目结束后，由豆荚统一结算，按学生课时量计算。</li>
+        </ul>
+    </section>
+
+</body>
+</html>
