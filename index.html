@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>豆荚2025荷兰艺术夏令营 - 行程与定价</title>
+    <title>豆荚2025荷兰艺术夏令营 - 成本与定价分析</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -12,7 +12,7 @@
             padding: 20px;
             background-color: #f9f9f9;
             color: #333;
-            max-width: 900px; /* Limiting width for better readability on wide screens */
+            max-width: 1000px; /* Wider max-width for detailed budget */
             margin-left: auto;
             margin-right: auto;
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -20,418 +20,553 @@
             border-radius: 8px;
         }
         h1, h2, h3, h4 {
-            color: #2c3e50; /* A slightly softer black */
-            border-bottom: 1px solid #ecf0f1; /* Light line under headings */
+            color: #2c3e50;
+            border-bottom: 1px solid #ecf0f1;
             padding-bottom: 5px;
             margin-top: 30px;
         }
         h1 {
             text-align: center;
-            border-bottom: 2px solid #3498db; /* Thicker blue line for main title */
+            border-bottom: 2px solid #3498db;
             margin-bottom: 30px;
         }
+        h2 {
+             margin-top: 40px;
+             border-bottom-width: 2px; /* Slightly thicker border for h2 */
+             border-color: #e0e0e0;
+        }
         h3 {
-            margin-top: 40px;
+            margin-top: 30px;
+            color: #3498db; /* Blue color for h3 */
+            border-bottom: none; /* Remove border for h3 */
         }
         hr {
             border: none;
             height: 1px;
-            background-color: #bdc3c7; /* Slightly darker separator */
+            background-color: #bdc3c7;
             margin: 40px 0;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 15px;
+            margin-bottom: 25px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-size: 0.95em; /* Slightly smaller font for tables */
         }
         th, td {
-            border: 1px solid #dfe6e9; /* Lighter borders */
-            padding: 12px 15px;
+            border: 1px solid #dfe6e9;
+            padding: 10px 12px; /* Adjusted padding */
             text-align: left;
-            vertical-align: top; /* Align content to top */
+            vertical-align: top;
         }
         th {
-            background-color: #ecf0f1; /* Light grey header */
+            background-color: #ecf0f1;
             font-weight: bold;
             color: #34495e;
         }
         tbody tr:nth-child(odd) {
-            background-color: #fdfdfd; /* Very light alternate row color */
+            background-color: #fdfdfd;
         }
         tbody tr:hover {
-            background-color: #f1f5f8; /* Hover effect */
+            background-color: #f1f5f8;
+        }
+        /* Right align numerical data */
+        td:nth-child(2), td:nth-child(3), td:nth-child(4),
+        td:nth-child(5), td:nth-child(6), td:nth-child(7),
+        td:nth-child(8), td:nth-child(9), td:nth-child(10) {
+             text-align: right;
+        }
+         /* Ensure first column and description columns remain left aligned */
+        td:first-child,
+        th:first-child,
+        table#execution-costs td:nth-child(3), /* Description col in cost table */
+        table#pricing-analysis td:nth-child(6), /* Last col in analysis table */
+        table#parent-pricing td:nth-child(3), /* Description col in parent table */
+        table.budget-detail td:nth-child(2), /* Project column in budget */
+        table.budget-detail td:nth-child(4), /* Project column in budget */
+        table.budget-detail td:nth-child(6), /* Project column in budget */
+         th {
+            text-align: left;
+         }
+
+        .budget-detail th { /* More specific alignment for budget table headers */
+             text-align: center;
+         }
+         .budget-detail td {
+             vertical-align: middle; /* Center content vertically in budget table */
+             font-size: 0.9em; /* Even smaller font for dense table */
+             padding: 8px 10px;
+         }
+         .budget-detail .stage-header td {
+             background-color: #eaf4fc;
+             font-weight: bold;
+             color: #2980b9;
+             text-align: left;
+             padding-left: 10px;
+         }
+        .budget-detail .total-row td {
+            font-weight: bold;
+            background-color: #f1f5f8;
+        }
+        .summary-section p, .summary-section ul {
+            margin-left: 15px;
+        }
+        .summary-section h3 {
+             color: #2c3e50; /* Back to darker color for summary heading */
+             border-bottom: 1px solid #ecf0f1; /* Add border back */
+             padding-bottom: 5px;
         }
         ul {
             padding-left: 20px;
-            list-style-type: square; /* Simple list style */
+            list-style-type: disc; /* Use standard disc */
         }
         li {
             margin-bottom: 8px;
         }
         blockquote {
             background-color: #f8f9fa;
-            border-left: 5px solid #3498db; /* Blue left border */
+            border-left: 5px solid #3498db;
             margin: 20px 0;
             padding: 15px 20px;
             color: #555;
-            font-style: italic;
         }
         strong {
-            color: #2980b9; /* Highlight strong text */
-        }
-        /* Specific alignment for currency columns */
-        td:nth-child(2) { /* Assuming second column often contains currency */
-             text-align: right;
-        }
-        table tr td:last-child { /* Align last column left */
-             text-align: left;
-        }
-        /* Ensure table headers are aligned left unless specific need */
-         th {
-            text-align: left;
-         }
-
-        /* --- Calendar Styles Start --- */
-        .calendar-container {
-            margin-top: 25px;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #f8f9fa; /* Light background for the calendar container */
-            border-radius: 5px;
-            border: 1px solid #e9ecef;
-        }
-        .calendar-container h4 {
-            margin-top: 0; /* Remove extra top margin for heading inside container */
-            text-align: center;
-            border-bottom: none; /* Remove default border for heading inside */
-            margin-bottom: 15px;
-            color: #3498db;
-        }
-        .calendar-widget {
-            width: 100%;
-            border-collapse: collapse; /* Use collapse for cleaner look */
-            table-layout: fixed; /* Ensure columns have equal width */
-            box-shadow: none; /* Remove default table shadow if applied */
-            margin: 0; /* Remove default table margins */
-        }
-        .calendar-widget th {
-            text-align: center;
-            padding: 10px 5px;
-            background-color: #eaf4fc; /* Lighter blue for header */
-            font-weight: normal; /* Make weekday headers less bold */
             color: #2980b9;
-            border: 1px solid #dceaf7;
         }
-        .calendar-widget td {
-            text-align: center;
-            padding: 10px 5px; /* Adjusted padding */
-            border: 1px solid #e9ecef;
-            height: 55px; /* Adjusted height */
-            vertical-align: top; /* Align date to top */
-            position: relative; /* For positioning labels */
-            font-size: 0.9em; /* Slightly smaller date font */
-        }
-        .calendar-widget td.other-month {
-            color: #aaa; /* Grey color for dates from other months */
-            background-color: #f8f8f8; /* Slightly different background */
-        }
-        .calendar-widget td.camp-date {
-            background-color: #d1eaff; /* Light blue background for camp dates */
+        .warning {
+            color: #e74c3c; /* Red color for warning */
             font-weight: bold;
-            color: #1c6ca7;
         }
-         /* Ensure other-month style overrides camp-date if needed (though not applicable here) */
-        .calendar-widget td.other-month.camp-date {
-             background-color: #f8f8f8; /* Keep other month style dominant */
-             font-weight: normal;
-             color: #aaa;
-         }
-        .calendar-widget td.start-date {
-             /* Optional: Add specific style for start date */
-             /* border-left: 3px solid #2980b9; */
+        .note {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            display: block; /* Make notes appear on new line */
+            margin-top: 4px;
         }
-        .calendar-widget td.end-date {
-             /* Optional: Add specific style for end date */
-             /* border-right: 3px solid #2980b9; */
-        }
-        .calendar-widget td .day-label {
-            display: block;
-            font-size: 0.7em;
-            margin-top: 2px;
-            color: #e74c3c; /* Red color for labels */
-            font-weight: bold;
-            line-height: 1.1;
-            position: absolute; /* Position label within cell */
-            bottom: 4px; /* Position at bottom */
-            left: 0;
-            right: 0; /* Center the label text */
-            text-align: center;
-        }
-         /* Remove hover effect for calendar cells if desired */
-        .calendar-widget tbody tr:hover {
-            background-color: inherit; /* Override default table row hover */
-        }
-         .calendar-widget tbody tr td:hover {
-             background-color: #f1f5f8; /* Apply hover only to individual cells */
-         }
-        .calendar-widget td.other-month:hover {
-            background-color: #efefef; /* Different hover for other month */
-        }
-         .calendar-widget td.camp-date:hover {
-             background-color: #b8daff; /* Darker hover for camp dates */
-         }
-        /* --- Calendar Styles End --- */
 
     </style>
 </head>
 <body>
 
-    <h1>推荐日期 + 定价方案</h1>
+    <h1>豆荚2025荷兰艺术夏令营 - 成本与定价分析</h1>
 
-    <section id="itinerary">
-        <h3>最佳日期：</h3>
-        <p><strong>8月5日周二抵达 - 8月16日周六返程（12-13天）</strong></p>
+    <section id="cost-structure">
+        <h2>成本结构</h2>
 
-        <div class="calendar-container">
-            <h4>行程日期概览：2025年8月</h4>
-            <table class="calendar-widget">
-                <thead>
-                    <tr>
-                        <th>一</th>
-                        <th>二</th>
-                        <th>三</th>
-                        <th>四</th>
-                        <th>五</th>
-                        <th>六</th>
-                        <th>日</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="other-month">28</td>
-                        <td class="other-month">29</td>
-                        <td class="other-month">30</td>
-                        <td class="other-month">31</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td class="camp-date start-date">5<span class="day-label">抵达</span></td>
-                        <td class="camp-date">6</td>
-                        <td class="camp-date">7</td>
-                        <td class="camp-date">8</td>
-                        <td class="camp-date">9</td>
-                        <td class="camp-date">10</td>
-                    </tr>
-                    <tr>
-                        <td class="camp-date">11</td>
-                        <td class="camp-date">12</td>
-                        <td class="camp-date">13</td>
-                        <td class="camp-date">14</td>
-                        <td class="camp-date">15</td>
-                        <td class="camp-date end-date">16<span class="day-label">返程</span></td>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                         <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                    </tr>
-                     <tr>
-                         <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                    </tr>
-                     <tr>
-                         <td class="other-month">1</td>
-                        <td class="other-month">2</td>
-                        <td class="other-month">3</td>
-                        <td class="other-month">4</td>
-                        <td class="other-month">5</td>
-                        <td class="other-month">6</td>
-                        <td class="other-month">7</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h4>基于如下考量：</h4>
-        <ul>
-            <li>博物馆开放时间（避开周一关闭）</li>
-            <li>交通时间平滑（避开周末高峰）</li>
-            <li>时差节奏（第一天抵达先休息适应）</li>
-        </ul>
-
-        <h4>具体行程：</h4>
-        <p><strong>2025年8月5日（周二） - 8月16日（周六）</strong></p>
-        <table>
+        <h3>执行成本（每人）</h3>
+        <table id="execution-costs">
             <thead>
                 <tr>
-                    <th>日期</th>
-                    <th>地点</th>
-                    <th>主要活动</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>8.5 (周二)</td>
-                    <td>北京 → 阿姆斯特丹</td>
-                    <td>报到、入住、适应时差</td>
-                </tr>
-                <tr>
-                    <td>8.6-8.8</td>
-                    <td>阿姆斯特丹</td>
-                    <td>动物园、博物馆群、科学馆、公园写生</td>
-                </tr>
-                <tr>
-                    <td>8.9-8.11</td>
-                    <td>森林营地</td>
-                    <td>自然探索、攀岩、划船、绩火创作</td>
-                </tr>
-                <tr>
-                    <td>8.12</td>
-                    <td>烏特勒支 + 海牙</td>
-                    <td>艺术迷宫、运河散步、入住</td>
-                </tr>
-                <tr>
-                    <td>8.13</td>
-                    <td>海牙 → 巴黎</td>
-                    <td>王家美术馆，通勤火车转地铁</td>
-                </tr>
-                <tr>
-                    <td>8.14-15</td>
-                    <td>巴黎</td>
-                    <td>卢浮宫、奥赛、科学城、塞纳河写生</td>
-                </tr>
-                <tr>
-                    <td>8.16 (周六)</td>
-                    <td>巴黎 → 北京</td>
-                    <td>整理返程</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <hr>
-
-    <section id="pricing">
-        <h1>费用与定价</h1>
-
-        <h3>💰 执行成本结构（按每位学生）</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>项目</th>
+                    <th>类型</th>
                     <th>金额（人民币）</th>
                     <th>说明</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>行动成本</td>
-                    <td>¥26,000</td>
-                    <td>含住宿、交通、门票、餐饮、材料等基础费用</td>
+                    <td>欧洲段每日成本 × 12天</td>
+                    <td>¥17,000</td>
+                    <td>按每人每日约1400元计</td>
                 </tr>
                 <tr>
-                    <td>国际机票</td>
-                    <td>¥15,000</td>
-                    <td>学生机票费用（不含教师）</td>
+                    <td>往返机票</td>
+                    <td>¥14,000</td>
+                    <td>北京-阿姆斯特丹/巴黎返程，直飞单程7000元估算</td>
                 </tr>
                 <tr>
-                    <td>签证+保险+材料</td>
-                    <td>¥4,000</td>
-                    <td>含签证办理、欧洲保险、绘画材料等</td>
+                    <td>签证 + 保险 + 材料费</td>
+                    <td>¥2,000</td>
+                    <td>包含申根签证办理、保险及绘画材料</td>
                 </tr>
                 <tr>
-                    <td><strong>小计</strong></td>
-                    <td><strong>¥45,000</strong></td>
-                    <td><strong>为项目基本执行成本</strong></td>
+                    <td><strong>执行总成本</strong></td>
+                    <td><strong>¥33,000</strong></td>
+                    <td><strong>本12天行程计划的单人出行成本。</strong></td>
                 </tr>
             </tbody>
         </table>
 
-        <hr style="border-style: dashed; background: none; border-top: 1px dashed #bdc3c7; margin: 20px 0;">
+        <h3>教师成本（悠洋、小宋、孙老师、豆妈）</h3>
+        <p>每位老师总成本 ¥33,000（欧洲段 ¥17,000 + 机票签证 ¥16,000）</p>
+        <p><strong>总计 ¥132,000</strong> (4位教师)</p>
+        <p>日均教师成本合计为 <strong>¥11,000</strong>（此成本需被学员报名费平摊覆盖）</p>
+    </section>
 
-        <h3>劳务成本（另计）</h3>
-        <p>领队教师劳务费：每位学生按 2.5 课时 × 200 元 × 12 天 = <strong>¥6,000</strong> 每学生计费</p>
-        <p>随行教师劳务费用：固定计费或按课时计费</p>
-        <p>教师劳务由机构统一核算与结算，<strong>不计入行动预算，但需在定价中覆盖</strong></p>
+    <hr>
 
-        <hr style="border-style: dashed; background: none; border-top: 1px dashed #bdc3c7; margin: 20px 0;">
+    <section id="pricing-analysis-section">
+        <h2>定价分析</h2>
 
-        <h3>定价建议（学生）</h3>
-        <table>
+        <h3>售价分析</h3>
+        <table id="pricing-analysis">
+            <thead>
+                <tr>
+                    <th>每日售价</th>
+                    <th>售价（12天）</th>
+                    <th>每日可摊教师成本 (售价-执行成本)/12天</th>
+                    <th>最低成团学员数 (11000/每日可摊)</th>
+                    <th>共计覆盖教师成本 (可摊*人数)</th>
+                    <th>能否覆盖每日 ¥11,000 教师成本</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>¥3,000</td>
+                    <td>¥36,000</td>
+                    <td>¥1,600</td> <td>7人</td> <td>¥11,200</td> <td>覆盖，无收入</td>
+                </tr>
+                <tr>
+                    <td>¥3,600</td>
+                    <td>¥43,200</td>
+                    <td>¥2,200</td> <td>5人</td> <td>¥11,000</td> <td>覆盖，无收入</td>
+                </tr>
+                 <tr>
+                    <td>¥4,100</td>
+                    <td>¥49,200</td>
+                    <td>¥2,700</td> <td>4人</td> <td>¥10,800</td> <td><span class="warning">⚠️ 勉强覆盖，相当于一对一</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">*注：上表中“每日可摊教师成本”根据原始文本数据填写，其计算逻辑可能基于特定假设，与简单公式(售价-执行成本)/12天不完全一致，在此保留原始数据。*</p>
+
+
+        <h3>定价建议（每学员）</h3>
+        <ul>
+            <li><strong>内部最低价：¥36,000</strong>（¥3000/每天，接近成本线，8人团几乎无利润）</li>
+            <li><strong>推荐售价：¥43,200</strong>（¥3600/每天，6人即可微利成团）</li>
+            <li><strong>理想售价：¥48,000</strong>（¥4000/每天，提供合理利润空间，6人成团有较好收益）</li>
+        </ul>
+
+        <h3>家长随行价格（建议区间）</h3>
+        <table id="parent-pricing">
             <thead>
                 <tr>
                     <th>模型</th>
-                    <th>内容</th>
-                    <th>建议定价</th>
+                    <th>建议费用</th>
+                    <th>内容说明</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>成本价</strong></td>
-                    <td>仅覆盖项目执行成本</td>
-                    <td>¥45,000</td>
-                </tr>
-                <tr>
-                    <td><strong>基础定价</strong></td>
-                    <td>含项目成本 + 教师劳务</td>
-                    <td>¥52,000</td>
-                </tr>
-                <tr>
-                    <td><strong>机构定价</strong></td>
-                    <td>含运营利润空间（25–50%）</td>
-                    <td><strong>¥60,000 – ¥70,000</strong></td>
+                    <td>家长随团标准价</td>
+                    <td><strong>¥38,000 – ¥42,000</strong></td>
+                    <td>与孩子共享大部分住宿与交通（阿姆斯特丹+乌特勒支+巴黎部分），不含4天森林营地活动及教学服务。</td>
                 </tr>
             </tbody>
         </table>
-        <blockquote>
-            <p>建议对外统一公布定价为 ¥6–7 万之间，既覆盖所有人力与运营投入，又留有项目利润空间。</p>
-        </blockquote>
+        <blockquote><p>说明：家长仅参与阿姆斯特丹+乌特勒支+巴黎部分，全程住宿与车位需提前预留，成本接近学生标准价。实际执行成本需单独核算。</p></blockquote>
+    </section>
 
-        <h3>👨‍👩‍👧 家长随行方案定价（自愿参与）</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>方案</th>
-                    <th>内容</th>
-                    <th>建议定价（人民币）</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>A方案</strong></td>
-                    <td>全程随团参与，含交通+住宿+门票</td>
-                    <td>¥45,000 / 位成人</td>
-                </tr>
-                <tr>
-                    <td><strong>B方案</strong></td>
-                    <td>仅覆盖机票+签证+部分住宿</td>
-                    <td>¥36,000 / 位成人</td>
-                </tr>
-            </tbody>
-        </table>
-        <blockquote>
-            <p><em>说明：家长方案仅涵盖实际执行成本与管理协调，不包含教学服务。</em></p>
-        </blockquote>
+     <hr>
 
-        <h3>📌 执行机制说明</h3>
+     <section id="operations">
+        <h2>运营与执行</h2>
+
+        <h3>运营说明</h3>
         <ul>
-            <li><strong>定金机制</strong>：为确保行程顺利预定，建议每位家庭在报名时支付<strong>40%定金</strong>，用于酒店、交通与材料锁定。</li>
-            <li><strong>教师劳务费</strong>：项目结束后，由豆荚统一结算，按学生课时量计算。</li>
+            <li>教师劳务成本已内含于课程定价中，由学员学费平摊。</li>
+            <li>所有材料采购、酒店、交通等预定费用由机构先行垫付。</li>
+            <li>为锁定资源，需向报名家庭收取 <strong>40%定金</strong>。</li>
+            <li>教师劳务由豆荚夏令营结束后根据实际情况统一核算结算。</li>
         </ul>
+
+        <h3>推荐销售目标</h3>
+        <p>理想团队构成：<strong>8 学生 + 4 教师 + 2 家长</strong>。</p>
+        <p>交通：租用 12 座大巴 (Coach)。</p>
+        <p>住宿：满编 14 人住同一酒店（考虑预订 7 个标准间）。</p>
+        <p>家长总开销预估：将在 <strong>¥52,000</strong>（¥36,000随行费 + ¥16,000签证机票估算）至 <strong>¥65,000</strong>（¥49,000随行费 + ¥16,000签证机票估算）之间浮动，取决于最终定价和选择。</p>
+
+        <h3>盈亏平衡点分析</h3>
+        <ul>
+            <li><strong>8人成团，售价 ¥36,000/人</strong> 是盈亏平衡底线（¥3000/天/人，基本覆盖所有成本，无利润）。</li>
+            <li>利润点主要出现在 **第9位及以上的学员报名**，或者当定价采用 **¥43,200 (¥3600/天)** 或 **¥48,000 (¥4000/天)** 时，即使是6-8人团也能产生利润。</li>
+        </ul>
+     </section>
+
+    <hr>
+
+    <section id="detailed-budget">
+        <h2>行程总览 + 预算明细</h2>
+        <p><strong>行程日期：2025年8月5日（周二） - 8月16日（周六）</strong></p>
+        <p class="note">*以下预算为初步估算，货币单位：欧元 (€) / 人民币 (¥)，汇率按 ≈ 1:7.87 计算*</p>
+
+        <table class="budget-detail">
+             <thead>
+                 <tr>
+                     <th rowspan="2">阶段</th>
+                     <th rowspan="2">日期</th>
+                     <th colspan="2">住宿</th>
+                     <th colspan="2">餐饮</th>
+                     <th colspan="2">交通</th>
+                     <th colspan="2">活动/门票</th>
+                     <th rowspan="2">其他 (€)</th>
+                     <th rowspan="2">小计 (€/人/天)</th>
+                     <th rowspan="2">人民币转换 (¥/人/天)</th>
+                     <th rowspan="2">4教师需覆盖成本 (¥/天)</th>
+                 </tr>
+                 <tr>
+                     <th>项目</th>
+                     <th>费用 (€)</th>
+                     <th>项目</th>
+                     <th>费用 (€)</th>
+                     <th>项目</th>
+                     <th>费用 (€)</th>
+                     <th>项目</th>
+                     <th>费用 (€)</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr class="stage-header"><td colspan="13"><strong>阿姆斯特丹 (Amsterdam)</strong></td></tr>
+                 <tr>
+                     <td rowspan="4">阿姆斯特丹</td>
+                     <td>第1天 (5日 周二)</td>
+                     <td>Avani Hotel<br><span class="note">预算基于7间14人</span></td>
+                     <td>110</td>
+                     <td>晚餐/零食</td>
+                     <td>60</td>
+                     <td>OV卡<br><span class="note">3/4日市内交通</span></td>
+                     <td>8</td>
+                     <td>Artis动物园, 水上自行车</td>
+                     <td>25</td>
+                     <td>0</td>
+                     <td>203</td>
+                     <td>1600</td> <td>6400</td> </tr>
+                 <tr>
+                     <td>第2天 (6日 周三)</td>
+                     <td><span class="note">每间约220欧? 包早餐?</span></td>
+                     <td>110</td>
+                     <td>午/晚餐</td>
+                     <td>60</td>
+                     <td>OV卡</td>
+                     <td>8</td>
+                     <td>梵高美术馆, Rijksmuseum<br><span class="note">18岁以下免费</span></td>
+                     <td>22</td>
+                     <td>0</td>
+                     <td>200</td>
+                     <td>1580</td>
+                     <td>6320</td>
+                 </tr>
+                 <tr>
+                     <td>第3天 (7日 周四)</td>
+                     <td><span class="note">包早餐</span></td>
+                     <td>110</td>
+                     <td>午/晚餐</td>
+                     <td>60</td>
+                     <td>OV卡</td>
+                     <td>8</td>
+                     <td>NEMO科学中心</td>
+                     <td>20</td>
+                     <td>0</td>
+                     <td>198</td>
+                     <td>1560</td>
+                     <td>6240</td>
+                 </tr>
+                  <tr>
+                     <td>第4天 (8日 周五)</td>
+                     <td><span class="note">可能含10%税</span></td>
+                     <td>110</td>
+                     <td>午/晚餐</td>
+                     <td>60</td>
+                     <td>OV卡</td>
+                     <td>8</td>
+                     <td>市立博物馆<br><span class="note">18岁以下免费</span></td>
+                     <td>20</td>
+                     <td>0</td>
+                     <td>198</td>
+                     <td>1560</td>
+                     <td>6240</td>
+                 </tr>
+
+                 <tr class="stage-header"><td colspan="13"><strong>森林营地 (Forest Camp)</strong></td></tr>
+                 <tr>
+                     <td rowspan="3">森林营地</td>
+                     <td>第5天 (9日 周六)</td>
+                     <td>Markant Outdoorcentrum<br><span class="note">上下铺</span></td>
+                     <td>20</td>
+                     <td>营地餐饮</td>
+                     <td>70</td> <td>大巴租赁<br><span class="note">12座, AMS->营地</span></td>
+                     <td>50</td> <td>弓箭, 滑索, 团队游戏</td>
+                     <td>25</td>
+                     <td>0</td>
+                     <td>165</td>
+                     <td>1300</td>
+                     <td>5200</td>
+                 </tr>
+                  <tr>
+                     <td>第6天 (10日 周日)</td>
+                     <td></td>
+                     <td>20</td>
+                     <td>营地餐饮</td>
+                     <td>20</td>
+                     <td></td>
+                     <td>0</td>
+                     <td>造木筏, 独木舟, 自然探索</td>
+                     <td>50</td>
+                     <td>0</td>
+                     <td>90</td>
+                     <td>710</td>
+                     <td>2840</td>
+                 </tr>
+                  <tr>
+                     <td>第7天 (11日 周一)</td>
+                     <td><span class="note">周末需提前预定</span></td>
+                     <td>20</td>
+                     <td>营地餐饮</td>
+                     <td>20</td>
+                     <td></td>
+                     <td>0</td>
+                     <td>生存训练, 攀岩</td>
+                     <td>50</td>
+                     <td>0</td>
+                     <td>90</td>
+                     <td>710</td>
+                     <td>2840</td>
+                 </tr>
+
+                 <tr class="stage-header"><td colspan="13"><strong>乌特勒支 / 海牙 (Utrecht / The Hague)</strong></td></tr>
+                  <tr>
+                     <td>乌特勒支</td>
+                     <td>第8天 (12日 周二)</td>
+                     <td>酒店待定</td>
+                     <td>80</td>
+                     <td>午/晚餐</td>
+                     <td>80</td>
+                     <td>大巴租赁<br><span class="note">全天</span></td>
+                     <td>60</td> <td>Doloris迷宫, 河道漫步</td>
+                     <td>30</td>
+                     <td>0</td>
+                     <td>250</td>
+                     <td>1970</td>
+                     <td>7880</td>
+                  </tr>
+                   <tr>
+                     <td>海牙</td>
+                     <td>第9天 (13日 周三)</td>
+                     <td>酒店待定</td>
+                     <td>100</td>
+                     <td>午/晚餐</td>
+                     <td>80</td>
+                     <td>大巴送海牙 / 火车?<br><span class="note">交通方式待定</span></td>
+                     <td>50</td> <td>莫瑞泰斯皇家美术馆</td>
+                     <td>15</td>
+                     <td>0</td>
+                     <td>245</td>
+                     <td>1930</td>
+                     <td>7720</td>
+                  </tr>
+
+                 <tr class="stage-header"><td colspan="13"><strong>巴黎 (Paris)</strong></td></tr>
+                  <tr>
+                     <td rowspan="3">巴黎</td>
+                     <td>第10天 (14日 周四)</td>
+                     <td>酒店待定</td>
+                     <td>100</td>
+                     <td>午/晚餐</td>
+                     <td>80</td>
+                     <td>市内交通卡<br><span class="note">3日</span></td>
+                     <td>10</td>
+                     <td>卢浮宫</td>
+                     <td>17</td>
+                     <td>0</td>
+                     <td>207</td>
+                     <td>1630</td>
+                     <td>6520</td>
+                  </tr>
+                   <tr>
+                     <td>第11天 (15日 周五)</td>
+                     <td></td>
+                     <td>100</td>
+                     <td>午/晚餐</td>
+                     <td>80</td>
+                     <td>交通卡</td>
+                     <td>10</td>
+                     <td>奥赛美术馆</td>
+                     <td>14</td>
+                     <td>0</td>
+                     <td>204</td>
+                     <td>1600</td>
+                     <td>6400</td>
+                  </tr>
+                  <tr>
+                     <td>第12天 (16日 周六)</td>
+                     <td><span class="note">退房, 无住宿费</span></td>
+                     <td>0</td>
+                     <td>午餐/零食</td>
+                     <td>80</td>
+                     <td>交通卡/机场交通</td>
+                     <td>10</td> <td>塞纳河 (游船?)</td>
+                     <td>12</td>
+                     <td>0</td>
+                     <td>102</td>
+                     <td>800</td>
+                     <td>3200</td>
+                  </tr>
+                  <tr class="total-row">
+                     <td colspan="3"><strong>欧洲段小计 (€/人)</strong></td>
+                     <td><strong>880</strong></td> <td></td>
+                     <td><strong>750</strong></td> <td></td>
+                     <td><strong>192</strong></td> <td></td>
+                     <td><strong>298</strong></td> <td><strong>0</strong></td>
+                     <td><strong>2120</strong></td> <td><strong>16700</strong></td> <td><strong>66800</strong></td> </tr>
+             </tbody>
+        </table>
+
+        <div class="summary-section">
+             <h3>预算汇总（人民币/人）</h3>
+             <table>
+                 <thead>
+                     <tr>
+                         <th>项目</th>
+                         <th>金额（¥）</th>
+                         <th>4教师总计（¥）</th>
+                         <th>说明</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>欧洲段执行成本 (12天)</td>
+                         <td>~ ¥17,000</td>
+                         <td>~ ¥68,000</td>
+                         <td>根据上方每日预算估算</td>
+                     </tr>
+                      <tr>
+                         <td>签证 + 保险 + 材料费</td>
+                         <td>¥2,000</td>
+                         <td>¥8,000</td>
+                         <td></td>
+                     </tr>
+                      <tr>
+                         <td>往返机票</td>
+                         <td>¥14,000</td>
+                         <td>¥56,000</td>
+                         <td></td>
+                     </tr>
+                     <tr class="total-row">
+                         <td><strong>单人成本总计 (估算)</strong></td>
+                         <td><strong>~ ¥33,000</strong></td>
+                         <td></td>
+                         <td></td>
+                     </tr>
+                     <tr class="total-row">
+                         <td><strong>4教师成本总计 (估算)</strong></td>
+                         <td></td>
+                         <td><strong>~ ¥132,000</strong></td>
+                         <td>需被学员学费覆盖</td>
+                     </tr>
+                      <tr class="total-row">
+                         <td><strong>教师日均需覆盖成本</strong></td>
+                         <td></td>
+                         <td><strong>~ ¥11,000</strong></td>
+                         <td>¥132,000 / 12天</td>
+                     </tr>
+                 </tbody>
+             </table>
+             <blockquote>
+                 <p><strong>最终说明：</strong>4名教师出行成本总计约 ¥132,000（每位教师的欧洲段成本约 ¥17,000 + 机票签证约 ¥16,000 = ¥33,000）。此成本需要被学员的学费完全覆盖。因此，12天行程中，平均每日需要从学员学费中分摊约 ¥11,000 来覆盖教师成本。</p>
+            </blockquote>
+        </div>
+
     </section>
 
 </body>
